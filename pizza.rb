@@ -1,6 +1,6 @@
 class Pizza
   attr_accessor :toppings
-  def initialize(toppings)
+  def initialize(toppings="cheese")
     @toppings = toppings
   end
 end
