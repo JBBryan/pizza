@@ -11,3 +11,12 @@ describe Topping do
     expect(Topping).to be_a(Class)
   end
 end
+
+describe ".initialize" do
+  it "sets the name of the topping" do
+    topping = Topping.new("pep")
+
+    expect(topping.name).to eq("pep")
+  end
+end
+
