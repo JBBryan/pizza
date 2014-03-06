@@ -12,11 +12,16 @@ describe Topping do
   end
 end
 
-describe ".initialize" do
-  it "sets the name of the topping" do
-    topping = Topping.new("pep")
-
+  describe ".initialize" do
+    it "sets the name of the topping" do
+      topping = Topping.new("pep")
     expect(topping.name).to eq("pep")
+    end
+    it "identifies a topping as vegetarian or not" do
+      topping = Topping.new("pep", vegetarian: false)
+    expect(topping.vegetarian).to eq(false)
   end
 end
+
+
 
